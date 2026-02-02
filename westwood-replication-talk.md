@@ -555,22 +555,38 @@ plot1cjustifieddata <- study3 %>%
 
 ---
 
-# Weighted Analysis for YouGov Data
+# Why Study 3 (YouGov) Needs Weights
 
-Study 3 uses survey weights for population representativeness:
+**The problem:** YouGov uses quota sampling, not simple random sampling.
+
+Their raw sample systematically over-represents some groups (e.g., college-educated, politically engaged) and under-represents others.
+
+**The solution:** Survey weights. Each respondent gets a weight indicating how many people in the population they "represent."
+
+| Respondent type | Weight | Meaning |
+|-----------------|--------|---------|
+| Oversampled (e.g., college grad) | 0.7 | Counts less than 1 person |
+| Undersampled (e.g., rural, no college) | 1.4 | Counts more than 1 person |
+
+**Without weights:** "30% of our sample supports violence"
+**With weights:** "30% of Americans support violence" (population estimate)
+
+---
+
+# Code: Weighted Confidence Intervals
 
 ```r
 # functions.R:8-20
 weighted.ttest.ci <- function(x, weights, conf.level = 0.95) {
-  require(Hmisc)
   nx <- length(x)
-  df <- nx - 1
-  vx <- Hmisc::wtd.var(x, weights, normwt = TRUE)
-  mx <- weighted.mean(x, weights)
+  vx <- Hmisc::wtd.var(x, weights, normwt = TRUE)  # weighted variance
+  mx <- weighted.mean(x, weights)                   # weighted mean
   stderr <- sqrt(vx/nx)
   # ... t-distribution CI
 }
 ```
+
+The `weight` column in `study3.csv` contains these post-stratification weights provided by YouGov.
 
 ---
 
