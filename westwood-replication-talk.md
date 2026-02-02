@@ -53,12 +53,12 @@ These respondents systematically inflate violence support estimates.
 
 # Study Design Overview
 
-| Study | Platform | n | Design |
-|-------|----------|---|--------|
-| Study 1 | Qualtrics | 1,002 | Car-ramming vignette |
-| Study 2 | Qualtrics | 1,023 | Shooting vignette |
-| Study 3 | YouGov | 1,863 | Shooting (weighted) |
-| Study 4 | Qualtrics | 1,009 | Sentencing task |
+| Study | Platform | Date | n | Design |
+|-------|----------|------|---|--------|
+| Study 1 | Qualtrics | Jan 2021 | 1,002 | Car-ramming vignette |
+| Study 2 | Qualtrics | Apr 2021 | 1,023 | Shooting vignette |
+| Study 3 | YouGov | Nov 2021 | 1,863 | Shooting (weighted) |
+| Study 4 | Qualtrics | Jan 2021 | 1,009 | Sentencing task |
 
 Total cost: ~$25,000 in survey fees
 
