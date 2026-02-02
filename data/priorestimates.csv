@@ -1,0 +1,51 @@
+StoryID,StoryURL,AuthorKM,SurveyWave,Month,Year,Question,PartisansSupport,DemocratSupport,RepublicanSupport
+1,https://www.nytimes.com/2019/03/13/opinion/hate-politics.html,0,2017 CCES Module,12,2017,PS6,,20,16
+1,https://www.nytimes.com/2019/03/13/opinion/hate-politics.html,0,2017 CCES Module,12,2017,PV4,,18,14
+2,www.politico.com/news/magazine/2020/10/01/political-violence-424157,1,"Unclear; \the pool of respondents between our datasets is slightly different\"". The June sample is problaly from \""June & Sept 2020 UCLA/Nationscape surveys\"" described on Kalmoe's website. However, the Sept sample could be from the Democracy Fund's \""Sept 2020 Voter Study Group\"" or potentially the other 2020 studies. None of this data is public, so I cannot verify.""",9,2020,PV3,,33,36
+2,www.politico.com/news/magazine/2020/10/01/political-violence-424157,1,"Unclear; \the pool of respondents between our datasets is slightly different\"". The June sample is problaly from \""June & Sept 2020 UCLA/Nationscape surveys\"" described on Kalmoe's website. However, the Sept sample could be from the Democracy Fund's \""Sept 2020 Voter Study Group\"" or potentially the other 2020 studies. None of this data is public, so I cannot verify.""",6,2020,PV3,,30,30
+2,www.politico.com/news/magazine/2020/10/01/political-violence-424157,1,"Unclear; \the pool of respondents between our datasets is slightly different\"". The June sample is problaly from \""June & Sept 2020 UCLA/Nationscape surveys\"" described on Kalmoe's website. However, the Sept sample could be from the Democracy Fund's \""Sept 2020 Voter Study Group\"" or potentially the other 2020 studies. None of this data is public, so I cannot verify.""",9,2020,PV4,,41,44
+2,www.politico.com/news/magazine/2020/10/01/political-violence-424157,1,"Unclear; \the pool of respondents between our datasets is slightly different\"". The June sample is problaly from \""June & Sept 2020 UCLA/Nationscape surveys\"" described on Kalmoe's website. However, the Sept sample could be from the Democracy Fund's \""Sept 2020 Voter Study Group\"" or potentially the other 2020 studies. None of this data is public, so I cannot verify.""",6,2020,PV4,,37,35
+3,https://www.washingtonpost.com/politics/2021/01/11/what-you-need-know-about-how-many-americans-condone-political-violence-why/,1,2017 CCES Module,12,2017,PV3,8,,
+3,https://www.washingtonpost.com/politics/2021/01/11/what-you-need-know-about-how-many-americans-condone-political-violence-why/,1,2018 CCES Module,12,2018,PV3,15,,
+3,https://www.washingtonpost.com/politics/2021/01/11/what-you-need-know-about-how-many-americans-condone-political-violence-why/,1,"Various; \across nine surveys in 2017-2019\""""",,,PV4,20,,
+3,https://www.washingtonpost.com/politics/2021/01/11/what-you-need-know-about-how-many-americans-condone-political-violence-why/,1,BLW Wave 12,10,2020,Violence_5,40,,
+4,https://fivethirtyeight.com/features/our-radicalized-republic/,0,Unclear,,2020,PV4,20,,
+5,https://www.vox.com/policy-and-politics/22217576/trump-insurrection-capitol-america-political-violence,0,BLW Wave 12,10,2020,PV3,15,,
+5,https://www.vox.com/policy-and-politics/22217576/trump-insurrection-capitol-america-political-violence,0,BLW Wave 12,10,2020,PV4,25,,
+5,https://www.vox.com/policy-and-politics/22217576/trump-insurrection-capitol-america-political-violence,0,BLW Wave 12,10,2020,Violence_5,40,,
+6,https://www.nbcnews.com/think/opinion/pro-trump-capitol-riot-violence-underscores-bipartisan-danger-dehumanizing-language-ncna1254530,1,"Unclear; either \Sept 2020 Voter Study Group\"" or \""Sept 2020 UCLA/Nationscape surveys\"" but the data are not public""",9,2020,PV4,25,,
+7,https://www.washingtonpost.com/opinions/2019/10/04/short-primer-preventing-political-violence/,0,2019 YouGov,7,2019,PV3,13,,
+8,https://www.theguardian.com/us-news/2021/jul/19/joe-biden-republicans-polarization-us-politics-texas,0,2020 CCES Oct/Nov Panel or Oct 2020 YouGov Omnibus (Democracy Fund),10,2020,PV4,,,20
+8,https://www.theguardian.com/us-news/2021/jul/19/joe-biden-republicans-polarization-us-politics-texas,0,Unclear; no 2021 datasets listed on their websites,2,2021,PV4,,,30
+9,https://www.latimes.com/opinion/story/2020-09-17/americans-anti-democratic-sentiment-bartels,0,Bartels 2020 YouGov,1,2020,B1,,,50
+9,https://www.latimes.com/opinion/story/2020-09-17/americans-anti-democratic-sentiment-bartels,0,Bartels 2020 YouGov,1,2020,B2,,,40
+9,https://www.latimes.com/opinion/story/2020-09-17/americans-anti-democratic-sentiment-bartels,0,Bartels 2020 YouGov,1,2020,B3,,,47
+9,https://www.latimes.com/opinion/story/2020-09-17/americans-anti-democratic-sentiment-bartels,0,2017 CCES Module,12,2017,PV4,,18,14
+10,https://www.governing.com/now/violence-is-likely-to-escalate-ahead-of-the-election.html,0,2017 CCES Module,12,2017,PS3,,17,7
+10,https://www.governing.com/now/violence-is-likely-to-escalate-ahead-of-the-election.html,0,2017 CCES Module,12,2017,PV3,9,,
+10,https://www.governing.com/now/violence-is-likely-to-escalate-ahead-of-the-election.html,0,2017 CCES Module,12,2017,PV4,,18,13
+11,https://carnegieendowment.org/2019/10/04/short-primer-on-preventing-political-violence-pub-79997,0,2019 YouGov,7,2019,PV3,13,,
+12,https://www.washingtonpost.com/politics/fear-of-election-violence/2020/10/30/5b4f5314-17a3-11eb-befb-8864259bd2d8_story.html,0,2017 CCES Module,12,2017,PS6,,20,15
+12,https://www.washingtonpost.com/politics/fear-of-election-violence/2020/10/30/5b4f5314-17a3-11eb-befb-8864259bd2d8_story.html,0,2017 CCES Module,1,2017,PV4,,18,13
+13,https://www.nytimes.com/2021/01/18/us/supporters-of-donald-trump.html,0,2017 CCES Module,12,2017,PV3,10,,
+13,https://www.nytimes.com/2021/01/18/us/supporters-of-donald-trump.html,0,"Unclear; \after the [2020] election,\"" so it's most likely the 2020 CCES post-election wave, but it could be the Feb 2021 YouGov study alluded to in another story""",,,PV3,20,,
+14,https://lasvegassun.com/news/2020/sep/21/too-many-people-have-lost-faith-in-democracy/,0,Bartels 2020 YouGov,1,2020,B1,,,50
+14,https://lasvegassun.com/news/2020/sep/21/too-many-people-have-lost-faith-in-democracy/,0,Bartels 2020 YouGov,1,2020,B2,,,40
+14,https://lasvegassun.com/news/2020/sep/21/too-many-people-have-lost-faith-in-democracy/,0,Bartels 2020 YouGov,1,2020,B3,,,47
+14,https://lasvegassun.com/news/2020/sep/21/too-many-people-have-lost-faith-in-democracy/,0,2017 CCES Module,12,2017,PV4,,18,14
+15,https://www.tennessean.com/story/opinion/2020/02/17/science-gives-us-recipe-civil-conversations/4470881002/,0,2017 CCES Module,12,2017,PS6,20,,
+16,https://www.newyorker.com/magazine/2020/11/16/pulling-our-politics-back-from-the-brink,0,2017 CCES Module,12,2017,PS6,,20,15
+16,https://www.newyorker.com/magazine/2020/11/16/pulling-our-politics-back-from-the-brink,0,"Unclear; either \Sept 2020 Voter Study Group\"" or \""Sept 2020 UCLA/Nationscape surveys\"" but the data are not public""",9,2020,PV3,17,,
+17,https://www.economist.com/briefing/2020/10/29/president-trump-has-had-real-achievements-and-a-baleful-effect,0,Unclear; no 2021 datasets listed on their websites,2,2020,PV4,,18,18
+18,https://newrepublic.com/article/156402/hate-ballot,0,2017 CCES Module,12,2017,PS6,,20,15
+19,https://greatergood.berkeley.edu/article/item/whats_driving_political_violence_in_america,0,2017 CCES Module,12,2017,PS6,,20,15
+19,https://greatergood.berkeley.edu/article/item/whats_driving_political_violence_in_america,0,2017 CCES Module,12,2017,PV3,9,,
+20,https://fivethirtyeight.com/live-blog/biden-inauguration/,0,"Various; \across nine surveys in 2017-2019\""""",,,PV4,20,,
+21,https://www.niskanencenter.org/when-partisans-endorse-violence/,1,Unclear,,,PV3,13,,
+21,https://www.niskanencenter.org/when-partisans-endorse-violence/,1,Unclear,,,PV4,25,,
+22,https://reason.com/2020/08/05/the-looming-illegitimate-election-of-2020/,0,2019 Voter Study Group survey,,2019,PV4,,20,20
+23,https://reason.com/2019/10/01/in-todays-america-everybody-who-disagrees-with-you-is-a-traitor/,0,2017 CCES Module,12,2017,PV4,,18,13
+24,https://www.washingtonpost.com/opinions/americans-are-at-each-others-throats-heres-one-way-out/2019/12/20/c8de01ca-2292-11ea-a153-dce4b94e4249_story.html,0,2017 CCES Module,12,2017,PV4,,15,15
+25,https://www.wsj.com/articles/crises-lay-bare-a-goodwill-deficit-in-america-11591623044,0,2017 CCES Module,12,2017,PV4,,18,13
+26,https://www.newyorker.com/news/daily-comment/is-american-tolerance-for-political-violence-on-the-rise,0,BLW Wave 12,10,2020,PV4,,21,26
+26,https://www.newyorker.com/news/daily-comment/is-american-tolerance-for-political-violence-on-the-rise,0,BLW Wave 12,10,2020,Violence_5,,36,46
