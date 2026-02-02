@@ -10,6 +10,7 @@ suppressPackageStartupMessages({
   library(gtools)
   library(cowplot)
   library(stringr)
+  library(effects)
 })
 
 # Helper functions
@@ -40,11 +41,7 @@ cat("Generating Figure 3...\n")
 source("figure3.R")
 
 cat("Generating Figure 4...\n")
-tryCatch({
-  source("figure4.R")
-}, error = function(e) {
-  cat("  SKIPPED: Figure 4 requires 'effects' package (C++ compilation issue)\n")
-})
+source("figure4.R")
 
 cat("Generating Figure 5...\n")
 source("figure5.R")
