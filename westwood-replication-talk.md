@@ -83,7 +83,7 @@ Simple factual question: "In what state did the incident occur?"
 
 # Key Finding: Engagement Matters
 
-![bg right:45% fit](results/plot2.pdf)
+![bg right:45% fit](results/plot2.png)
 
 **Study 1** (Political treatments):
 - Engaged: 12.1%
@@ -132,7 +132,7 @@ Standard error: $SE = \frac{s}{\sqrt{n}}$
 
 # Figure 1: Prior Estimates vs. Reality
 
-![bg right:50% fit](results/plot_hist.pdf)
+![bg right:50% fit](results/plot_hist.png)
 
 Distribution of Kalmoe-Mason (2019) derived estimates from media coverage.
 
@@ -164,7 +164,7 @@ all <- ggplot(data=kme[!is.na(kme$PartisansSupport),],
 
 # Figure 3: Response Distributions
 
-![bg right:45% fit](results/plot3.pdf)
+![bg right:45% fit](results/plot3.png)
 
 Distribution of responses by engagement status.
 
@@ -236,28 +236,49 @@ $$\text{justified}_i = \beta_0 + \beta_1 \cdot \text{alignment}_i + \beta_2 \cdo
 
 ---
 
-# Figure 4: Key Coefficients
+# Figure 4: Full OLS Regression Table
 
-```
-                         Estimate  Std.Err  t-value   p-value
-(Intercept)                0.101    0.019    5.33    <0.001 ***
-Q77f5                      0.536    0.065    8.24    <0.001 ***
-alignmentIn-Party:Q77f4    0.269    0.121    2.22     0.027 *
-```
+<div class="small">
 
-**Interpretation:**
+| Term | Estimate | SE | t | p |
+|------|----------|-----|-----|-----|
+| (Intercept) | 0.101 | 0.019 | 5.33 | <.001*** |
+| alignmentIn-Party | 0.011 | 0.034 | 0.31 | .755 |
+| alignmentOut-Party | -0.051 | 0.034 | -1.53 | .128 |
+| Q77f2 | 0.233 | 0.060 | 3.86 | <.001*** |
+| Q77f3 | 0.233 | 0.049 | 4.77 | <.001*** |
+| Q77f4 | 0.419 | 0.074 | 5.68 | <.001*** |
+| Q77f5 | 0.536 | 0.065 | 8.24 | <.001*** |
+| In-Party:Q77f4 | 0.269 | 0.121 | 2.22 | .027* |
 
-- **Intercept (0.101)**: Only ~10% say violence is justified at baseline (Q77=1, Apolitical)
+</div>
 
-- **Q77f5 (0.536)**: People who say "5 - A great deal" on the abstract question are 54 percentage points more likely to say the vignette violence was justified
+$R^2 = 0.23$, $n = 1000$, $F(14, 985) = 20.84$, $p < .001$
 
-- **Interaction (0.269)**: At Q77=4, In-Party alignment adds an *extra* 27pp beyond main effects
+---
+
+# Figure 4: Coefficient Interpretation
+
+**Baseline (Intercept = 0.101):**
+- Apolitical Driver + Q77=1 ("Not at all"): only 10% say justified
+
+**Main effect of Q77 (abstract self-report):**
+- Q77=5 vs Q77=1: +54 percentage points
+- Strong gradient: higher abstract endorsement → higher concrete endorsement
+
+**Main effect of alignment:**
+- In-Party vs Apolitical: +1pp (not significant)
+- Out-Party vs Apolitical: -5pp (not significant)
+
+**Key interaction (In-Party:Q77f4 = 0.269):**
+- At Q77=4, being In-Party adds *extra* 27pp beyond main effects
+- People who moderately endorse abstract violence are especially likely to justify in-party violence
 
 ---
 
 # Figure 4: What the Plot Shows
 
-![bg right:45% fit](results/plot4.pdf)
+![bg right:45% fit](results/plot4.png)
 
 Each row = a level of Q77 (abstract self-report)
 
@@ -284,7 +305,7 @@ If abstract and concrete measures were capturing the same underlying attitude, w
 
 # Figure 5: Sentencing Task (Study 4)
 
-![bg right:45% fit](results/plot5.pdf)
+![bg right:45% fit](results/plot5.png)
 
 Concrete behavioral measure: proposed prison sentences.
 
@@ -296,7 +317,7 @@ Tests whether respondents distinguish crime severity.
 
 # Figure 6: Correlates Inflation
 
-![bg right:45% fit](results/plot6.pdf)
+![bg right:45% fit](results/plot6.png)
 
 **Panel A**: Aggression predicts passing engagement test
 **Panel B**: Distribution of aggression by engagement
