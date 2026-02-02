@@ -146,6 +146,9 @@ Blue line: Engaged median (~2.9%)
 # Code: Figure 1 Histogram
 
 ```r
+# figure1.R:5 - kme = "Kalmoe-Mason Estimates"
+kme <- read_csv("../data/priorestimates.csv")
+
 # figure1.R:22-36
 all <- ggplot(data=kme[!is.na(kme$PartisansSupport),],
               aes(PartisansSupport)) +
