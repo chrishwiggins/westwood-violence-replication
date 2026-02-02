@@ -193,30 +193,92 @@ Problem: Abstract questions allow satisficing without detection.
 
 ---
 
-# Figure 4: Interaction Effects
+# Figure 4: The Key Test
 
-![bg right:45% fit](results/plot4.pdf)
+**Research question**: Does abstract self-reported support for violence (the Kalmoe-Mason style question) actually predict concrete judgments about specific violent acts?
 
-Self-reported justification for violence (Q77) predicts vignette responses.
+This is the central validity test of the paper.
 
-But relationship differs by treatment condition (alignment).
-
-Generated using `effects` package for regression interaction visualization.
+If abstract measures are valid, people who say "violence is justified" in the abstract should also say specific violent acts are justified.
 
 ---
 
-# Code: Figure 4 Regression
+# Figure 4: Variables Explained
 
-```r
-# figure4.R:5-8
-study1$Q77f <- as.factor(study1$Q77)
-q77justified <- summary(lm(justified ~ alignment * Q77f,
-                           data = study1))
-eff <- effect(q77justified,
-              term = "alignment * Q77f", as.table = T)
+**Outcome variable (Y)**: `justified`
+- Binary (0/1): Did respondent say the driver's action was "Justified" or "Unjustified"?
+- This is the *concrete* measure - judgment about a specific vignette
+
+**Predictor 1**: `Q77` (1-5 Likert scale)
+- "To what extent is political violence justified?"
+- This is the *abstract* Kalmoe-Mason (2019) style measure
+- 1 = "Not at all" ... 5 = "A great deal"
+
+**Predictor 2**: `alignment` (experimental condition)
+- **In-Party Driver**: Perpetrator shares respondent's party
+- **Out-Party Driver**: Perpetrator is from opposing party
+- **Apolitical Driver**: No party mentioned (control)
+
+---
+
+# Figure 4: The OLS Model
+
+$$\text{justified}_i = \beta_0 + \beta_1 \cdot \text{alignment}_i + \beta_2 \cdot \text{Q77}_i + \beta_3 \cdot (\text{alignment}_i \times \text{Q77}_i) + \epsilon_i$$
+
+**What each term tests:**
+
+| Term | Question |
+|------|----------|
+| $\beta_0$ | Baseline: What % say justified when Q77=1 and Apolitical? |
+| $\beta_1$ | Does In-Party vs Out-Party change judgments (at Q77=1)? |
+| $\beta_2$ | Does higher abstract endorsement predict concrete endorsement? |
+| $\beta_3$ | Does the Q77 effect *differ* by alignment? (interaction) |
+
+---
+
+# Figure 4: Key Coefficients
+
+```
+                         Estimate  Std.Err  t-value   p-value
+(Intercept)                0.101    0.019    5.33    <0.001 ***
+Q77f5                      0.536    0.065    8.24    <0.001 ***
+alignmentIn-Party:Q77f4    0.269    0.121    2.22     0.027 *
 ```
 
-OLS with interaction: $Y = \beta_0 + \beta_1 \cdot \text{alignment} + \beta_2 \cdot \text{Q77} + \beta_3 \cdot (\text{alignment} \times \text{Q77})$
+**Interpretation:**
+
+- **Intercept (0.101)**: Only ~10% say violence is justified at baseline (Q77=1, Apolitical)
+
+- **Q77f5 (0.536)**: People who say "5 - A great deal" on the abstract question are 54 percentage points more likely to say the vignette violence was justified
+
+- **Interaction (0.269)**: At Q77=4, In-Party alignment adds an *extra* 27pp beyond main effects
+
+---
+
+# Figure 4: What the Plot Shows
+
+![bg right:45% fit](results/plot4.pdf)
+
+Each row = a level of Q77 (abstract self-report)
+
+Each point = predicted probability of saying "justified" for that Q77 level and alignment condition
+
+**Pattern**: Higher Q77 → higher probability of concrete endorsement, but the relationship isn't perfect
+
+---
+
+# Figure 4: The Takeaway
+
+**Abstract measures do predict concrete judgments** - $R^2 = 0.23$
+
+But **23% of variance explained is not great** for a validity check.
+
+If abstract and concrete measures were capturing the same underlying attitude, we'd expect much higher correlation.
+
+**Implication**: Abstract questions like "When is violence OK?" measure something different from concrete judgments about specific acts. The Kalmoe-Mason measure conflates:
+- True violence endorsement
+- Satisficing/random responding
+- Hypothetical vs. realistic scenarios
 
 ---
 
