@@ -134,7 +134,7 @@ Standard error: $SE = \frac{s}{\sqrt{n}}$
 
 ![bg right:50% fit](results/plot_hist.pdf)
 
-Distribution of Kalmoe-Mason derived estimates from media coverage.
+Distribution of Kalmoe-Mason (2019) derived estimates from media coverage.
 
 Orange line: Disengaged median (~18.5%)
 Blue line: Engaged median (~2.9%)
