@@ -253,7 +253,7 @@ prop <- ggplot(study2,
   scale_x_continuous(limits = c(0,1))
 ```
 
-Buss-Perry Aggression Questionnaire (12 items, `preprocess1.R:78-91`)
+Buss-Perry Aggression Questionnaire (1992; 12 items, `preprocess1.R:78-91`)
 
 ---
 
