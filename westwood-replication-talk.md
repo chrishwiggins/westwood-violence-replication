@@ -350,12 +350,64 @@ We can't observe this, but we can **bound** it.
 Let:
 - $Y$ = observed outcome (support violence)
 - $C$ = engagement indicator (1 = passed check)
+- $T$ = truly engaged (latent, unobserved)
 - $g$ = guess rate on comprehension check
+- $Y^*$ = counterfactual answer if truly engaged
 
-True support among engaged population:
-$$\theta \in \left[ E[Y] + \frac{a \cdot P(C=0) - E[Y(1-C)]}{1-g}, \; E[Y] + \frac{b \cdot P(C=0) - E[Y(1-C)]}{1-g} \right]$$
+**Goal**: Bound $E[Y^*]$ - what would population answer if everyone were engaged?
 
-where $a, b$ bound what disengaged would answer if engaged.
+---
+
+# Deriving the Bounds: Step 1
+
+**Key assumptions:**
+1. Truly engaged always pass: $P(C=1|T=1) = 1$
+2. Disengaged pass by guessing: $P(C=1|T=0) = g$
+3. Truly engaged answer truthfully: $Y = Y^*$ when $T=1$
+
+**Linking $T$ to observable $C$:**
+
+Everyone who fails ($C=0$) is truly disengaged ($T=0$).
+
+From law of total probability:
+$$P(C=0) = P(C=0|T=0)P(T=0) = (1-g)P(T=0)$$
+
+Solving: $\boxed{P(T=0) = \frac{P(C=0)}{1-g}}$
+
+---
+
+# Deriving the Bounds: Step 2
+
+**Decompose the counterfactual mean:**
+$$E[Y^*] = E[Y^*|T=1]P(T=1) + E[Y^*|T=0]P(T=0)$$
+
+For engaged ($T=1$): They answer truthfully, so $E[Y^*|T=1] = E[Y|T=1]$
+
+For disengaged ($T=0$): We don't know $E[Y^*|T=0]$, but we can bound it: $E[Y^*|T=0] \in [a, b]$
+
+**The observed mean:**
+$$E[Y] = E[Y|C=1]P(C=1) + E[Y|C=0]P(C=0)$$
+
+Since all $C=0$ are disengaged: $E[Y|C=0] = E[Y|T=0]$
+
+---
+
+# Deriving the Bounds: Step 3
+
+**The correction:**
+
+We need to replace disengaged responses with their counterfactual:
+$$E[Y^*] = E[Y] + P(T=0)\left(E[Y^*|T=0] - E[Y|C=0]\right)$$
+
+Substituting $P(T=0) = P(C=0)/(1-g)$ and bounding $E[Y^*|T=0] \in [a,b]$:
+
+$$\boxed{\theta \in \left[E[Y] + \frac{P(C=0)(a - E[Y|C=0])}{1-g}, \; E[Y] + \frac{P(C=0)(b - E[Y|C=0])}{1-g}\right]}$$
+
+**Interpretation:**
+- Start with observed mean $E[Y]$
+- Subtract inflated disengaged responses: $E[Y|C=0]$
+- Add back counterfactual: $\alpha \in [a,b]$
+- Adjust for guessers via $(1-g)$
 
 ---
 
