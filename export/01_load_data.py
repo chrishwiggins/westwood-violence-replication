@@ -51,20 +51,23 @@ DATA_URLS = {
     # Studies 1 & 4: Qualtrics panel, January 2021
     # Study 1: Car-ramming vignette (violence against protesters)
     # Study 4: Sentencing task (proposed prison sentences)
-    "study14": "https://drive.google.com/uc?id=YOUR_FILE_ID_HERE",
+    "study14": "https://drive.google.com/uc?id=1gKIY11FaM5RmhhXTKx3wVcwGkMoTyTUM",
 
     # Studies 2 & 5: Qualtrics panel, April 2021
     # Study 2: Shooting vignette (violence at political rally)
     # Study 5: Incentive study (in appendix)
-    "study25": "https://drive.google.com/uc?id=YOUR_FILE_ID_HERE",
+    "study25": "https://drive.google.com/uc?id=1VfZM3hSDzIIIVp2AUGC-RwOy-Fk2t_Fm",
 
     # Study 3: YouGov nationally representative sample, November 2021
     # Same shooting vignette as Study 2, but with survey weights
-    "study3": "https://drive.google.com/uc?id=YOUR_FILE_ID_HERE",
+    "study3": "https://drive.google.com/uc?id=1OYlDc-TgzqNa9iFRgcUa1XRLH-uQHomO",
 
     # Prior estimates: Kalmoe-Mason derived percentages from media coverage
     # Used to show how prior research inflated violence support estimates
-    "priorestimates": "https://drive.google.com/uc?id=YOUR_FILE_ID_HERE",
+    "priorestimates": "https://drive.google.com/uc?id=1__z-IhvnRPgRqkyfG7rZlss7cIcR_kyn",
+
+    # News coverage data (2016-2021)
+    "newsCoverage": "https://drive.google.com/uc?id=1N4PSN87o687kwIcRBz80MBMJEgOz3yun",
 }
 
 
